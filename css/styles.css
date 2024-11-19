@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Make the main content area take up remaining space */
+}
+
+:root{
+    --main-color:#000;
+    --second-color:#007bff;
+    --third-color:#0056b3;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #acb1b5;  /* Light background color */
+    padding: 20px 0; /* Padding for top and bottom */
+}
+
+.footer-link {
+    color:  var(--main-color); 
+}
+
+.footer-link:hover {
+    color: var(--second-color);
+    text-decoration: none;
+}
+
+footer .text-center {
+
+    color: white;
+    padding: 10px 0; /* Padding for copyright */
+}
+footer .navbar-brand{
+    color:var(--main-color); 
+}
+footer .navbar-brand a :hover{
+    color:   var(--second-color);
+}
+.ad img{
+   width: 100%;
+   object-fit: cover;
+margin-top: 5%;
+   
+}
+.par1{
+    margin-left: 5%;
+    font-size: 20px;
+}
+#st1{
+    color:  var(--second-color);
+}
+.navbar-nav .nav-link {
+    color: var(--main-color);  
+    padding: 10px 15px; 
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover {
+    color:  var(--second-color); 
+}
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.btn-primary {
+    background-color:  var(--second-color); /* Primary button color */
+    border-color:  var(--second-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--third-color); /* Darker shade on hover */
+    border-color: var(--third-color);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Remove background */
+    border: solid var(--second-color); /* Set arrow border color */
+    border-width: 0 2px 2px 0; /* Make the arrow shape */
+    display: inline-block;
+    padding: 5px;
+}
+
+.carousel-control-prev-icon {
+    transform: rotate(135deg); /* Rotate for left arrow */
+}
+
+.carousel-control-next-icon {
+    transform: rotate(-45deg); /* Rotate for right arrow */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Adjust the width of the control buttons */
+}
